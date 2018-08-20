@@ -1,0 +1,21 @@
+[submodule ".vim_runtime/my_plugins/kotlin-vim"]
+  path=.vim_runtime/my_plugins/kotlin-vim
+  url=git@github.com:udalov/kotlin-vim.git
+[submodule ".vim_runtime/my_plugins/nerdcommenter"]
+  path=.vim_runtime/my_plugins/nerdcommenter
+  url=git@github.com:scrooloose/nerdcommenter.git
+[submodule ".vim_runtime/my_plugins/python-syntax"]
+  path=.vim_runtime/my_plugins/python-syntax
+  url=git@github.com:hdima/python-syntax.git
+[submodule ".vim_runtime/my_plugins/vim-scala"]
+  path=.vim_runtime/my_plugins/vim-scala
+  url=git@github.com:derekwyatt/vim-scala.git
+[submodule ".vim_runtime/my_plugins/vim-terraform"]
+  path=.vim_runtime/my_plugins/vim-terraform
+  url=git@github.com:hashivim/vim-terraform.git
+[submodule ".vim_runtime/my_plugins/vim-windowswap"]
+  path=.vim_runtime/my_plugins/vim-windowswap
+  url=git@github.com:wesQ3/vim-windowswap.git
+
+
+
