@@ -76,8 +76,11 @@ ale-chef-foodcritic	ale-chef.txt	/*ale-chef-foodcritic*
 ale-chef-options	ale-chef.txt	/*ale-chef-options*
 ale-clojure-joker	ale-clojure.txt	/*ale-clojure-joker*
 ale-clojure-options	ale-clojure.txt	/*ale-clojure-options*
+ale-cloudformation-cfn-python-lint	ale-cloudformation.txt	/*ale-cloudformation-cfn-python-lint*
+ale-cloudformation-options	ale-cloudformation.txt	/*ale-cloudformation-options*
 ale-cmake-cmakelint	ale-cmake.txt	/*ale-cmake-cmakelint*
 ale-cmake-options	ale-cmake.txt	/*ale-cmake-options*
+ale-coding-standards	ale-development.txt	/*ale-coding-standards*
 ale-command-chain	ale.txt	/*ale-command-chain*
 ale-command-format-strings	ale.txt	/*ale-command-format-strings*
 ale-commands	ale.txt	/*ale-commands*
@@ -105,6 +108,13 @@ ale-cuda-nvcc	ale-cuda.txt	/*ale-cuda-nvcc*
 ale-cuda-options	ale-cuda.txt	/*ale-cuda-options*
 ale-dart-dartanalyzer	ale-dart.txt	/*ale-dart-dartanalyzer*
 ale-dart-options	ale-dart.txt	/*ale-dart-options*
+ale-design-goals	ale-development.txt	/*ale-design-goals*
+ale-development	ale-development.txt	/*ale-development*
+ale-development-contents	ale-development.txt	/*ale-development-contents*
+ale-development-introduction	ale-development.txt	/*ale-development-introduction*
+ale-development-linter-tests	ale-development.txt	/*ale-development-linter-tests*
+ale-development-tests	ale-development.txt	/*ale-development-tests*
+ale-development.txt	ale-development.txt	/*ale-development.txt*
 ale-dockerfile-hadolint	ale-dockerfile.txt	/*ale-dockerfile-hadolint*
 ale-dockerfile-options	ale-dockerfile.txt	/*ale-dockerfile-options*
 ale-elixir-dialyxir	ale-elixir.txt	/*ale-elixir-dialyxir*
@@ -255,6 +265,8 @@ ale-pug-options	ale-pug.txt	/*ale-pug-options*
 ale-pug-puglint	ale-pug.txt	/*ale-pug-puglint*
 ale-puppet-options	ale-puppet.txt	/*ale-puppet-options*
 ale-puppet-puppetlint	ale-puppet.txt	/*ale-puppet-puppetlint*
+ale-pyrex-cython	ale-pyrex.txt	/*ale-pyrex-cython*
+ale-pyrex-options	ale-pyrex.txt	/*ale-pyrex-options*
 ale-python-autopep8	ale-python.txt	/*ale-python-autopep8*
 ale-python-black	ale-python.txt	/*ale-python-black*
 ale-python-flake8	ale-python.txt	/*ale-python-flake8*
@@ -563,6 +575,8 @@ b:ale_pug_puglint_options	ale-pug.txt	/*b:ale_pug_puglint_options*
 b:ale_pug_puglint_use_global	ale-pug.txt	/*b:ale_pug_puglint_use_global*
 b:ale_puppet_puppetlint_executable	ale-puppet.txt	/*b:ale_puppet_puppetlint_executable*
 b:ale_puppet_puppetlint_options	ale-puppet.txt	/*b:ale_puppet_puppetlint_options*
+b:ale_pyrex_cython_executable	ale-pyrex.txt	/*b:ale_pyrex_cython_executable*
+b:ale_pyrex_cython_options	ale-pyrex.txt	/*b:ale_pyrex_cython_options*
 b:ale_python_autopep8_executable	ale-python.txt	/*b:ale_python_autopep8_executable*
 b:ale_python_autopep8_options	ale-python.txt	/*b:ale_python_autopep8_options*
 b:ale_python_autopep8_use_global	ale-python.txt	/*b:ale_python_autopep8_use_global*
@@ -922,6 +936,8 @@ g:ale_pug_puglint_options	ale-pug.txt	/*g:ale_pug_puglint_options*
 g:ale_pug_puglint_use_global	ale-pug.txt	/*g:ale_pug_puglint_use_global*
 g:ale_puppet_puppetlint_executable	ale-puppet.txt	/*g:ale_puppet_puppetlint_executable*
 g:ale_puppet_puppetlint_options	ale-puppet.txt	/*g:ale_puppet_puppetlint_options*
+g:ale_pyrex_cython_executable	ale-pyrex.txt	/*g:ale_pyrex_cython_executable*
+g:ale_pyrex_cython_options	ale-pyrex.txt	/*g:ale_pyrex_cython_options*
 g:ale_python_autopep8_executable	ale-python.txt	/*g:ale_python_autopep8_executable*
 g:ale_python_autopep8_options	ale-python.txt	/*g:ale_python_autopep8_options*
 g:ale_python_autopep8_use_global	ale-python.txt	/*g:ale_python_autopep8_use_global*
