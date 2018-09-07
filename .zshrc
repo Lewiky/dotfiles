@@ -98,4 +98,6 @@ source $ZSH/oh-my-zsh.sh
 
 export AWS_DEFAULT_REGION="us-east-1"
 export AWS_PROFILE="dac-prod"
+export GOOGLE_APPLICATION_CREDENTIALS="/Users/lewis.bell/dac/den-applications/future-hits/future-hits-google-creds.js"
 bindkey "^X\x7f" backward-kill-line
+alias py=python3.7
