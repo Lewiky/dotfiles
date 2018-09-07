@@ -10,7 +10,7 @@ source ~/.vim_runtime/my_configs.vim
 catch
 endtry
 
-colorscheme monokai
+colorscheme moonokai
 set mouse=a
 set shiftwidth=2               " use indents of 2 spaces
 set expandtab " tabs are spaces, not tabs
