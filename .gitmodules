@@ -20,8 +20,8 @@
   path=.vim_runtime/my_plugins/awesome-vim-colorschemes
   url=git@github.com:rafi/awesome-vim-colorschemes.git
 [submodule ".vim_runtime/my_plugins/moonokai"]
-  path=.vim_runtime/my_plugins/moonokai
-  url=git@github.com:Lewiky/moonokai.git
+	path = .vim_runtime/my_plugins/moonokai
+	url = git@github.com:Lewiky/moonokai.git
 
 
 
