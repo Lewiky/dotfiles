@@ -18,3 +18,4 @@ set tabstop=2 " an indentation every two columns
 set softtabstop=2 " let backspace delete indent
 set number
 let python_highlight_all = 1
+au FocusGained * :AirlineRefresh!
