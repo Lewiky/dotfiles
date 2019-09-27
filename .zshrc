@@ -9,3 +9,7 @@ if [ -f '/Users/lewis.bell/Downloads/google-cloud-sdk/path.zsh.inc' ]; then sour
 if [ -f '/Users/lewis.bell/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/lewis.bell/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 
 source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+
+function gitgraph(){
+  git log --decorate --oneline --graph
+}
