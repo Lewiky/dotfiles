@@ -19,3 +19,9 @@ set softtabstop=2 " let backspace delete indent
 set number
 let python_highlight_all = 1
 au FocusGained * :AirlineRefresh!
+
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+augroup END
