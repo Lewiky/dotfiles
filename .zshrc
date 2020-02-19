@@ -4,7 +4,7 @@ export ZSH="/Users/lewiky/.oh-my-zsh"
 ZSH_THEME="agnoster"
 
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git vi-mode docker)
 
 source $ZSH/oh-my-zsh.sh
 
