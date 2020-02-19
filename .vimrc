@@ -17,6 +17,7 @@ set expandtab " tabs are spaces, not tabs
 set tabstop=2 " an indentation every two columns
 set softtabstop=2 " let backspace delete indent
 set number
+set cmdheight=1
 let python_highlight_all = 1
 au FocusGained * :AirlineRefresh!
 
