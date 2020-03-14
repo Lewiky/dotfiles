@@ -4,7 +4,7 @@ export ZSH="/Users/lewiky/.oh-my-zsh"
 ZSH_THEME="agnoster"
 
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode docker)
+plugins=(git vi-mode docker zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -23,8 +23,25 @@ function gitgraph(){
   git log --decorate --oneline --graph
 }
 
+function minikubers(){
+  minikube delete
+  minikube start --vm-driver=virtualbox
+  kubectl create secret docker-registry regcred --docker-server=registry.lewiky.com --docker-username=temple --docker-password=Lim0ncell0 --docker-email=lewisbell999@gmail.com
+  kubectl create -f kube
+}
+
+function kexec(){
+  kubectl exec -it "$1" -- sh
+}
+
+
 alias arduino='/Applications/Arduino.app/Contents/MacOS/Arduino'
 alias pull='git pull' 
+alias k='kubectl'
+alias kg='kubectl get'
+alias kd='kubectl describe'
+alias kgp='kubectl get pod'
+alias kdp='kubectl describe pod'
 source ~/.z.sh
 export GOPATH='/Users/lewiky/.go'
 export EDITOR='vim'
