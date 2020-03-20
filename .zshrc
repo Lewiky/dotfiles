@@ -49,3 +49,5 @@ export EDITOR='vim'
 # added by travis gem
 [ -f /Users/lewiky/.travis/travis.sh ] && source /Users/lewiky/.travis/travis.sh
 prompt_context(){} 
+
+eval $(thefuck --alias)
