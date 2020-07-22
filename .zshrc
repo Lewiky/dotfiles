@@ -35,7 +35,6 @@ function kexec(){
 }
 
 
-alias arduino='/Applications/Arduino.app/Contents/MacOS/Arduino'
 alias pull='git pull' 
 alias k='kubectl'
 alias kg='kubectl get'
@@ -43,8 +42,6 @@ alias kd='kubectl describe'
 alias kgp='kubectl get pod'
 alias kdp='kubectl describe pod'
 source ~/.z.sh
-export GOPATH='/Users/lewiky/.go'
-export EDITOR='vim'
 
 # added by travis gem
 [ -f /Users/lewiky/.travis/travis.sh ] && source /Users/lewiky/.travis/travis.sh
