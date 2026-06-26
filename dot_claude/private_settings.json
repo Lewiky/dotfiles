@@ -1,0 +1,30 @@
+{
+  "model": "opus[1m]",
+  "enabledPlugins": {
+    "frontend-design@claude-plugins-official": true,
+    "superpowers@claude-plugins-official": true,
+    "context7@claude-plugins-official": true,
+    "github@claude-plugins-official": true,
+    "typescript-lsp@claude-plugins-official": true,
+    "figma@claude-plugins-official": true,
+    "notion@claude-plugins-official": true,
+    "expo@expo-plugins": true,
+    "supabase@supabase-agent-skills": true,
+    "postgres-best-practices@supabase-agent-skills": true,
+    "posthog@claude-plugins-official": true
+  },
+  "extraKnownMarketplaces": {
+    "expo-plugins": {
+      "source": {
+        "source": "github",
+        "repo": "expo/skills"
+      }
+    },
+    "supabase-agent-skills": {
+      "source": {
+        "source": "github",
+        "repo": "supabase/agent-skills"
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+export EPIC_API_ENDPOINT="https://epic-qa.zenotech.com/api/v1"
+export PATH=$HOME/Projects/flutter/bin:$PATH
+
+# added by Anaconda3 5.0.1 installer
+export PATH="/Users/lewiky/anaconda3/bin:$PATH"
+. "$HOME/.cargo/env"

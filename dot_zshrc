@@ -1,0 +1,72 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+# Path to your oh-my-zsh installation.
+export ZSH="/Users/lewiky/.oh-my-zsh"
+
+ZSH_THEME="powerlevel10k/powerlevel10k" 
+
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(git vi-mode docker zsh-autosuggestions zsh-syntax-highlighting)
+
+source $ZSH/oh-my-zsh.sh
+
+bindkey "^X\x7f" backward-kill-line
+alias py=python3.7
+alias pi=pip3.7
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/lewis.bell/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/lewis.bell/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/lewis.bell/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/lewis.bell/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+
+function gitgraph(){
+  git log --decorate --oneline --graph
+}
+
+function minikubers(){
+  minikube delete
+  minikube start --vm-driver=virtualbox
+  kubectl create secret docker-registry regcred --docker-server=registry.lewiky.com --docker-username=temple --docker-password="${MINIKUBE_REGISTRY_PASSWORD:?Set in ~/.zshrc.local}" --docker-email=lewisbell999@gmail.com
+  kubectl create -f kube
+}
+
+function kexec(){
+  kubectl exec -it "$1" -- sh
+}
+
+
+alias pull='git pull' 
+alias k='kubectl'
+alias kg='kubectl get'
+alias kd='kubectl describe'
+alias kgp='kubectl get pod'
+alias kdp='kubectl describe pod'
+alias klf='kubectl logs --follow'
+source ~/.z.sh
+
+# added by travis gem
+[ -f /Users/lewiky/.travis/travis.sh ] && source /Users/lewiky/.travis/travis.sh
+prompt_context(){} 
+
+alias python=/usr/local/bin/python3
+alias pip=/usr/local/bin/pip3
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# bun completions
+[ -s "/Users/lewiky/.bun/_bun" ] && source "/Users/lewiky/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Machine-local secrets and overrides (not tracked in dotfiles repo)
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local

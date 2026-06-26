@@ -1,7 +1,3 @@
-*
-!.config
-!.vim
-!.vim_runtime
-!.vimrc
-!.zshrc
-!.gitignore
+*.swp
+*.swo
+.DS_Store
