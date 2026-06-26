@@ -2,6 +2,6 @@
 	email = lewisbell999@gmail.com
 	name = Lewis Bell
 [core]
-	excludesfile = /Users/lewiky/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	autocrlf = input
 	editor = vim
